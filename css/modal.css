@@ -54,6 +54,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       .under-modal {
         margin: 0;
         display: flex;
+        width: 558px;
         justify-content: space-between;
       }
 
@@ -138,12 +139,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
 /* The Close Button */
 
 .modal-content-input{
-    background-color: white;
-    width: 622px;
+    /* background-color: white; */
+    width: 558px;
     height: 170px;
     font-family: "Montserrat";
-    padding-top: 32px;
-    padding-left: 32px;
+    box-sizing: border-box;
 }
 .modal-content-input h2{
     font-size: 17px;
@@ -180,4 +180,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
     cursor: pointer;
     background: rgba(255, 255, 255, 0.12);
 
+}
+
+.modal-input-buttom{
+    width: 622px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 32px;
+    border-radius: 8px;
 }
