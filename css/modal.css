@@ -1,40 +1,85 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-      
-      /* The Modal (background) */
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-      }
-      
-      /* Modal Content */
-      .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-      }
-      
-      /* The Close Button */
-      .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-      
-      .close:hover,
-      .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-      }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgb(32, 55, 88,0.75);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    /* background-color: #fefefe; */
+    margin: auto;
+    /* border: 1px solid #888; */
+    width: 622px;
+    height: 242px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* The Close Button */
+
+.modal-content-input{
+    background-color: white;
+    width: 622px;
+    height: 170px;
+    font-family: "Montserrat";
+    padding-top: 32px;
+    padding-left: 32px;
+}
+.modal-content-input h2{
+    font-size: 17px;
+}
+
+.modal-textarea{
+    margin-top: 10px;
+    width: 558px;
+    height: 100px;
+    border: 1.5px solid #F1F2F6;
+    resize: none;
+    font-family: "Montserrat";
+    font-size: 15px;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    outline: none;
+
+
+}
+.modal-textarea:focus,.modal-textarea:hover{
+    border: 1.5px solid #e2e3eb;
+}
+
+.close-icon{
+    margin-left: auto;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 8px;
+}
+.close-icon:hover,
+.close-icon:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.12);
+
+}
