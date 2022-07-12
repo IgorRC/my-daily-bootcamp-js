@@ -59,6 +59,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
       .under-modal {
         margin: 0;
+        margin-top: 15px;
         display: flex;
         width: 558px;
         justify-content: space-between;
@@ -140,7 +141,24 @@ body {font-family: Arial, Helvetica, sans-serif;}
         background-color: #e4f1ff ;
 
       }
-      
+    
+      /* < by Igor :u */
+
+      .warningtext {
+        width: 558px;
+        color: #FF0000;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        height: 10px;
+        /* margin: 10px; */
+      }
+
+      .warningtext p {
+        
+      }
+
+      /* end de igor > */
 
 
 /* The Close Button */
@@ -167,8 +185,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
     padding: 14px 15px;
     box-sizing: border-box;
     outline: none;
-
-
 }
 .modal-textarea:focus,.modal-textarea:hover{
     border: 1.5px solid #e2e3eb;
