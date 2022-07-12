@@ -15,9 +15,7 @@
     <!-- end google fonts -->
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./css/style-navbar.css" />
-    <link rel="stylesheet" href="./css/modal.css">
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
-
+    <link rel="stylesheet" href="./css/modal.css" />
   </head>
   <body>
     <div class="header-wrapper">
@@ -113,8 +111,9 @@
           <form class="learning-form">
             <input
               type="text"
-              class="learning-input"
+              class="learning-input "
               placeholder="What did you learn today Paul?"
+              
             />
             <button class="learning-button" type="button">
               <svg
@@ -572,35 +571,44 @@
         <div class="footer">Bootcamp X © 2022</div>
       </div>
     </main>
-    
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
 
     <div id="myModal" class="modal">
-
       <!-- Modal content -->
       <div class="modal-content">
-        <img src="./assets/icons/cerrar.svg" class="close-icon">
+        <img src="./assets/icons/cerrar.svg" class="close-icon" />
+
         <div class="modal-input-buttom">
           <div class="modal-content-input">
             <h2>What did you learn today Paul?</h2>
-            <textarea placeholder="Today learnd..." class="modal-textarea"name="" id="" onKeyUp="maximo(this,100);" onKeyDown="maximo(this,100);"></textarea>
+            <textarea
+              placeholder="Today learnd..."
+              class="modal-textarea"
+              name=""
+              id=""
+              onKeyUp="maximo(this,100);"
+              onKeyDown="maximo(this,100);"
+            ></textarea>
           </div>
-            <!-- Codigo igor -->
-            <div class="under-modal">
-              <div class="under-modal-buttons">
-                <button class="button-imagen">
-                  <img src="/assets/icons/imagen-icon.svg" alt="">
-                </button>
-                <button class="button-location">
-                  <img src="/assets/icons/location-icon.svg" alt="">
-                </button>
-              </div>
-              <button class="modal-button">Publish</button>
+          <!-- Codigo igor -->
+          <div class="warningtext">
+            <p>Really? Did not you learning anythinf? This field is requiered!</p>
+          </div>
+          <div class="under-modal">
+            <div class="under-modal-buttons">
+              <button class="button-imagen">
+                <img src="/assets/icons/imagen-icon.svg" alt="" />
+              </button>
+              <button class="button-location">
+                <img src="/assets/icons/location-icon.svg" alt="" />
+              </button>
             </div>
+            <button class="modal-button">Publish</button>
+          </div>
         </div>
       </div>
-    
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/geolocation.js"></script>
