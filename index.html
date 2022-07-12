@@ -578,8 +578,11 @@
 
       <!-- Modal content -->
       <div class="modal-content">
-        <div>x</div>
-        <div>arriba</div>
+        <img src="./assets/icons/cerrar.svg" class="close-icon">
+        <div class="modal-content-input">
+          <h2>What did you learn today Paul?</h2>
+          <textarea placeholder="Today learnd..." class="modal-textarea"name="" id="" cols="30" rows="10" onKeyUp="maximo(this,100);" onKeyDown="maximo(this,100);"></textarea>
+        </div>
         <div>
           <!-- Codigo igor -->
           <div class="under-modal">
@@ -597,32 +600,7 @@
       </div>
     
     </div>
-    <script>
-      // Get the modal
-      var modal = document.getElementById("myModal");
-      
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
-      
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      </script>
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
