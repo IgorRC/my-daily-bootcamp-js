@@ -9,6 +9,7 @@
 @import url("./css/styles-new-learning.css");
 @import url("./css/stories.css");
 @import url("./css/main-scroll.css");
+@import url("./css/geolocation.css");
 
 ::after,
 ::before {
@@ -64,3 +65,6 @@ body {
   margin-bottom: 2em;
 }
 
+.hidden {
+  visibility: hidden;
+}

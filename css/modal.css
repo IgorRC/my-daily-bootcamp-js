@@ -1,221 +1,229 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-body {font-family: Arial, Helvetica, sans-serif;}
-      
-      /* The Modal (background) */
-      /* The Modal (background) */
+/* The Modal (background) */
+/* The Modal (background) */
 .modal {
-
-    visibility: hidden;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 100;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgb(32, 55, 88,0.75);
-    /* Black w/ opacity */
+  visibility: hidden;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgb(32, 55, 88, 0.75);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-    /* background-color: #fefefe; */
-    margin: auto;
-    /* border: 1px solid #888; */
-    width: 622px;
-    height: 242px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    transform: translateY(-100px);
-    opacity: 0;
-    transition: 0.3s;
-
+  /* background-color: #fefefe; */
+  margin: auto;
+  /* border: 1px solid #888; */
+  width: 622px;
+  height: 242px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: 0.3s;
 }
-      /* The Close Button */
-      .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-      
-      .close:hover,
-      .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-      }
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
-      .under-modal {
-        margin: 0;
-        margin-top: 15px;
-        display: flex;
-        width: 558px;
-        justify-content: space-between;
-        align-items: center;
-      }
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
+.under-modal {
+  margin: 0;
+  margin-top: 15px;
+  display: flex;
+  width: 558px;
+  justify-content: space-between;
+  align-items: center;
+}
 
-      .button-imagen {
-        border: none;
-        background-color: transparent;
-        margin: 0;
-      }
+.button-imagen {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+}
 
-      .button-location {
-        margin: 0;
-        border: none;
-        background-color: transparent;
-      }
+.button-location {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
 
-      .modal-button {
-        border: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 12px 45px;
-        gap: 10px;
-        flex-direction: column;
-        width: 120px;
-        height: 37px;
-        background: #F0F7FF;
-        transition: 0.3s;
-        border-radius: 6px;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        color: #1877F2;
-        font-weight: 700;
-      }
+.modal-button {
+  border: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 45px;
+  gap: 10px;
+  flex-direction: column;
+  width: 120px;
+  height: 37px;
+  background: #f0f7ff;
+  transition: 0.3s;
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  color: #1877f2;
+  font-weight: 700;
+}
 
-      .button-imagen img {
-        margin: 0;
-        width: 24px;
-        height: 24px;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background: #FFFFFF;
-        transition: 0.3s;
-        border-radius: 8px;
-        padding: 10px;
-      }
+.button-imagen img {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #ffffff;
+  transition: 0.3s;
+  border-radius: 8px;
+  padding: 10px;
+}
 
-      .button-location img{
-        margin: 0;
-        width: 24px;
-        height: 24px;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background: #FFFFFF;
-        transition: 0.3s;
-        border-radius: 8px;
-        padding: 10px;
+.button-location img {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: #ffffff;
+  transition: 0.3s;
+  border-radius: 8px;
+  padding: 10px;
+}
 
-      }
+.button-location img:hover {
+  cursor: pointer;
+  background-color: #f0f7ff;
+}
 
-      .button-location img:hover {
-        cursor: pointer;
-        background-color: #F0F7FF;
-      }
+.button-imagen img:hover {
+  cursor: pointer;
+  background-color: #f0f7ff;
+}
 
-      .button-imagen img:hover {
-        cursor: pointer;
-        background-color: #F0F7FF;
-      }
+.modal-button:hover {
+  cursor: pointer;
+  background-color: #e4f1ff;
+}
 
-      .modal-button:hover {
-        cursor: pointer;
-        background-color: #e4f1ff ;
+/* < by Igor :u */
 
-      }
-    
-      /* < by Igor :u */
+.warningtext {
+  width: 558px;
+  color: #ff0000;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  /* background-color: blue; */
 
-      .warningtext {
-        width: 558px;
-        color: #FF0000;
-        font-family: 'Montserrat';
-        font-size: 14px;
-        font-weight: 500;
-        height: 10px;
-        /* margin: 10px; */
-      }
+  /* margin: 10px; */
+}
 
-      .warningtext p {
-        
-      }
+.warningtext p {
+}
 
-      /* end de igor > */
-
+/* end de igor > */
 
 /* The Close Button */
 
-.modal-content-input{
-    /* background-color: white; */
-    width: 558px;
+.modal-content-input {
+  /* background-color: white; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 558px;
 
-    font-family: "Montserrat";
-    box-sizing: border-box;
+  font-family: "Montserrat";
+  box-sizing: border-box;
 }
-.modal-content-input h2{
-    font-size: 17px;
-}
-
-.modal-textarea{
-    margin-top: 10px;
-    width: 558px;
-    height: 100px;
-    border: 1.5px solid #F1F2F6;
-    resize: none;
-    font-family: "Montserrat";
-    font-size: 15px;
-    padding: 14px 15px;
-    box-sizing: border-box;
-    outline: none;
-}
-.modal-textarea:focus,.modal-textarea:hover{
-    border: 1.5px solid #e2e3eb;
+.modal-content-input h2 {
+  font-size: 17px;
 }
 
-.close-icon{
-    margin-left: auto;
-    margin-bottom: 8px;
-    padding: 12px;
-    border-radius: 8px;
+.modal-textarea {
+  margin-top: 10px;
+  width: 558px;
+  height: 100px;
+  border: 1.5px solid #f1f2f6;
+  resize: none;
+  font-family: "Montserrat";
+  font-size: 15px;
+  padding: 14px 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+.modal-textarea:focus,
+.modal-textarea:hover {
+  border: 1.5px solid #e2e3eb;
+}
+
+.close-icon {
+  margin-left: auto;
+  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 8px;
 }
 .close-icon:hover,
 .close-icon:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.12);
-
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.12);
 }
 
-.modal-input-buttom{
-    width: 622px;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 32px;
-    border-radius: 8px;
+.modal-input-buttom {
+  width: 622px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px;
+  border-radius: 8px;
 }
 
-.move-model{
-    transform: translateY(100px);
-    opacity: 1;
-  }
+.move-model {
+  transform: translateY(100px);
+  opacity: 1;
+}
+
+.message-container {
+  position: relative;
+  height: 44px;
+  margin-top: -4px;
+}
+
+.button-location-hover {
+  cursor: pointer;
+  background-color: #f0f7ff;
+}
