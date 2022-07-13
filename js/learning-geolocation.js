@@ -21,6 +21,7 @@ function calculateLocation() {
     location_icon.style.backgroundColor = "white";
     geolocation_message.style.display = "none";
     localStorage.removeItem("location");
+    storage_location = null;
     return;
   }
 
@@ -51,6 +52,7 @@ async function savePosition(position) {
   let { town, country } = responseJson.address;
   let location = " " + town + ", " + country;
   localStorage.setItem("location", location);
+  showLocation();
 }
 
 function showErrors(error) {
