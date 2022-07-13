@@ -111,9 +111,8 @@
           <form class="learning-form">
             <input
               type="text"
-              class="learning-input "
+              class="learning-input"
               placeholder="What did you learn today Paul?"
-              
             />
             <button class="learning-button" type="button">
               <svg
@@ -593,9 +592,15 @@
             ></textarea>
           </div>
           <!-- Codigo igor -->
-          <div class="warningtext">
-            <p>Really? Did not you learning anythinf? This field is requiered!</p>
+          <div class="geolocation-message learning-message">
+            From:<span class="location-data"></span>
           </div>
+          <div class="warningtext learning-message">
+            <p>
+              Really? Did not you learning anythinf? This field is requiered!
+            </p>
+          </div>
+
           <div class="under-modal">
             <div class="under-modal-buttons">
               <!-- <button class="button-imagen">
@@ -603,7 +608,13 @@
               </button> -->
 
               <div class="content-icon-camera">
-                <input type="file" id="file" name="file[]" accept="image/*" multiple />
+                <input
+                  type="file"
+                  id="file"
+                  name="file[]"
+                  accept="image/*"
+                  multiple
+                />
                 <div class="icon-camera"></div>
               </div>
 
@@ -616,13 +627,13 @@
           <!-- mi fin :u by igor -->
         </div>
         <!--de igor :u-->
-        <div class="preview-imagen">
-
-        </div>
+        <div class="preview-imagen"></div>
         <!-- mi fin by igor -->
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/learning-geolocation.js"></script>
+    <script src="./js/message-control-learning.js"></script>
     <script src="/js/previewFigure.js"></script>
   </body>
 </html>
