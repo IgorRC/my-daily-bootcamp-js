@@ -47,8 +47,15 @@ async function savePosition(position) {
       longitude +
       "&format=json"
   );
-
+  console.log(
+    "https://eu1.locationiq.com/v1/reverse?key=pk.d7081966f4a73ff67138855cfeb0e4ec&lat=" +
+      latitude +
+      "&lon=" +
+      longitude +
+      "&format=json"
+  );
   let responseJson = await response.json();
+  console.log(responseJson);
   let { town, country } = responseJson.address;
   let location = " " + town + ", " + country;
   localStorage.setItem("location", location);
