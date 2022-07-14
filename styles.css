@@ -10,6 +10,7 @@
 @import url("./css/stories.css");
 @import url("./css/main-scroll.css");
 @import url("./css/geolocation.css");
+@import url("./css/delete-modal.css");
 
 ::after,
 ::before {
