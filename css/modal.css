@@ -97,6 +97,12 @@ body {
   font-weight: 700;
 }
 
+.modal-button:hover {
+  cursor: pointer;
+  background: #1877F2;
+  color: white;
+}
+
 /* .button-imagen img {
         margin: 0;
         width: 24px;
